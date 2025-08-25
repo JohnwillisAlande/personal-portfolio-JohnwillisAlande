@@ -3,7 +3,7 @@ body {
   padding: 0 20px;
   max-width: 900px;
   margin: auto;
-  background: #f4f4f4;
+  background: #2dc1e6;
 }
 
 nav ul {
@@ -60,4 +60,10 @@ form button {
 
 form button:hover {
   background-color: #555;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
