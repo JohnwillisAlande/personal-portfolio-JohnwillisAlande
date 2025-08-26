@@ -1,3 +1,67 @@
+/* Hero Section Styles for Homepage */
+.hero-section {
+  background: linear-gradient(120deg, #e6f7fb 0%, #fff 100%);
+  border-radius: 14px;
+  box-shadow: 0 4px 24px rgba(45,193,230,0.07);
+  padding: 40px 28px;
+  margin-top: 36px;
+  margin-bottom: 32px;
+}
+.hero-content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.hero-image {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 2px 12px rgba(45,193,230,0.10);
+  margin-bottom: 0;
+  transition: transform 0.3s;
+}
+.hero-image:hover {
+  transform: scale(1.07) rotate(2deg);
+}
+.hero-text {
+  flex: 1 1 320px;
+  min-width: 220px;
+}
+.hero-title {
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: #2dc1e6;
+  margin-bottom: 10px;
+}
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: #1a8ca0;
+  margin-bottom: 14px;
+}
+.hero-description {
+  font-size: 1.05rem;
+  color: #444;
+  margin-bottom: 22px;
+}
+.cta-button {
+  display: inline-block;
+  background: #2dc1e6;
+  color: #fff;
+  font-weight: 600;
+  padding: 12px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1.08rem;
+  box-shadow: 0 2px 8px rgba(45,193,230,0.10);
+  transition: background 0.2s, transform 0.2s;
+}
+.cta-button:hover {
+  background: #1a8ca0;
+  transform: translateY(-2px) scale(1.04);
+}
 body {
   font-family: Arial, sans-serif;
   padding: 0 20px;
@@ -67,6 +131,165 @@ form button:hover {
 
 img {
   display: block;
+}
+
+.about-section {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+  padding: 32px 24px;
+  margin-top: 32px;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+.section-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #2dc1e6;
+  margin-bottom: 8px;
+}
+.section-subtitle {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.profile-section {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.profile-card {
+  background: #f7fafd;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(45,193,230,0.08);
+  padding: 24px 18px;
+  min-width: 240px;
+  max-width: 260px;
+  text-align: center;
+  margin-bottom: 16px;
+}
+.profile-image {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: transform 0.3s;
   margin-left: auto;
   margin-right: auto;
+}
+.profile-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+.profile-title {
+  font-size: 1rem;
+  color: #2dc1e6;
+  margin-bottom: 12px;
+}
+.profile-stats {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+.stat-item {
+  background: #e6f7fb;
+  border-radius: 6px;
+  padding: 6px 10px;
+  font-size: 0.95rem;
+  color: #333;
+  min-width: 70px;
+}
+.stat-number {
+  font-weight: 700;
+  color: #2dc1e6;
+  font-size: 1.1rem;
+}
+.stat-label {
+  display: block;
+  font-size: 0.85rem;
+}
+.contact-info {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  color: #555;
+}
+.contact-item {
+  margin-bottom: 4px;
+}
+
+.about-content {
+  flex: 2 1 350px;
+  min-width: 280px;
+}
+.card-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #2dc1e6;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.card-icon {
+  font-size: 1.2rem;
+}
+.card-content {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 18px;
+}
+.highlight-text {
+  color: #2dc1e6;
+  font-weight: 600;
+}
+.achievement-badge {
+  display: inline-block;
+  background: #e6f7fb;
+  color: #2dc1e6;
+  border-radius: 6px;
+  padding: 4px 10px;
+  margin: 2px 6px 2px 0;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 10px;
+  margin: 12px 0;
+}
+.skill-item {
+  background: #f7fafd;
+  border-radius: 6px;
+  padding: 8px 10px;
+  text-align: center;
+  font-size: 0.98rem;
+  color: #2dc1e6;
+  font-weight: 500;
+  box-shadow: 0 1px 4px rgba(45,193,230,0.07);
+  transition: transform 0.2s;
+}
+.skill-item:hover {
+  background: #e6f7fb;
+  color: #1a8ca0;
+  transform: translateY(-3px) scale(1.05);
+}
+.goals-card ul {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+  color: #555;
+}
+.fade-in {
+  animation: fadeIn 1s ease;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
 }
